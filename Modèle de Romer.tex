@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{amssymb}
+\def\nbR{\ensuremath{\mathrm{I\! R}}}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+\usepackage{lipsum}
+\makeatletter
+\def\maketitle{%
+    \begin{center}\leavevmode
+        \normalfont
+        \rule[0pt]{\textwidth}{1pt}\par
+        {\LARGE \@title\par}%
+        {\Large \@author\par}%
+        {\Large \@date\par}%
+        \rule[0pt]{\textwidth}{1pt}\par
+    \end{center}%
+}
+\makeatother
+\title{Le modèle de Romer}
+\author{Economia}
+\date{}
+
+\begin{document}
+\maketitle
+\section{La fonction de production :}
+
+La fonction de production est donnée par F( A, L) = Y = A (1 - $a_{L}$)L
+
+Avec $a_{L}$ $\in$ $[0 , 1]$
+
+$\textbf{L'accroissement des connaissances est donné par : }$ 
+\\
+$\stackrel{.}{A}$ (T) = B ${(a_{L} \cdot L(t))}^{\gamma}$ ${A(t)^{\theta}}$
+
+Avec $\stackrel{.}{A}$ la quantité de connaissance produite au temps t, B une constante et ${(a_{L} \cdot L(t))}^{\gamma}$ la partie de la population qui travail dans un secteur qui nécessite des connaissances (Recherche et developpement, enseignement...).
+
+On note $g_{A}$ = $\frac{\stackrel{.}{A}}{A}$ le taux de croissance des connaissances.
+\\\\
+\subsection{Montrons que $\stackrel{.}{g_{A} (t)}$ = ($\gamma$ n + ($\theta$ - 1 ) $g_{A}$ (t)) $\cdot$ $g_{A}$ (t) }
+On a $\frac{\stackrel{.}{g_{A}(t)}}{g_{A}(t)}$ = $\stackrel{.}{ln(g_{A} (t))}$ or $g_{A}$(t) = $\frac{\stackrel{.}{A}}{A}$ (t)
+
+$\Rightarrow$ ln( $g_{A}$) = ln ( $\frac{\stackrel{.}{A}}{A}$ ) =  ln( $\stackrel{.}{A}$) - ln(A) (or $\stackrel{.}{A}$ = B ${(a_{L} \cdot L(t))}^{\gamma}$ ${A(t)^{\theta}}$) $\Rightarrow$ ln(B ${(a_{L} \cdot L(t))}^{\gamma}$ ${A(t)^{\theta}}$ ) - ln (A)
+
+$\Rightarrow$ $\stackrel{.}{ln(g_{A} (t))}$ = $\stackrel{.}{ln(B)}$ + $\gamma$ $\stackrel{.}{ln (a_{L}}$ + $\gamma$ $\stackrel{.}{ln (L(t))}$ + $\theta$ $\stackrel{.}{ln(A(t))}$ - $\stackrel{.}{ln(A(t))}$ 
+
+= $\gamma$ $\frac{\stackrel{.}{a_{L}}}{a_{L}}$ + $\gamma$ $\frac{\stackrel{.}{L}}{L}$ + $\theta$ $\frac{\stackrel{.}{A}}{A}$ - $\frac{\stackrel{.}{A}}{A}$
+
+= $\gamma$n + $\theta$ $g_{A}$(t) - $g_{A}$(t) = $\gamma$n + ($\theta$ - 1) $g_{A}$(t)
+
+$\Rightarrow$ $\frac{\stackrel{.}{g_{A}(t)}}{g_{A}(t)}$ = $\gamma$n + ($\theta$ - 1) $g_{A}$(t) $\Leftrightarrow$ $\stackrel{.}{g_{A}(t)}$ = ($\gamma$ n + ($\theta$ - 1 ) $g_{A}$ (t)) $\cdot$ $g_{A}$ (t)
+
+\end{document}
